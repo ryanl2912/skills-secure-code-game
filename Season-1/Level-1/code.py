@@ -13,8 +13,8 @@ Follow the instructions below to get started:
 
 from collections import namedtuple
 
-Order = namedtuple('Order', 'id, items')
-Item = namedtuple('Item', 'type, description, amount, quantity')
+Order = namedtuple('Order', 'id', 'items')
+Item = namedtuple('Item', 'type', 'description', 'amount', 'quantity')
 
 def validorder(order: Order):
     net = 0
